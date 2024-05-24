@@ -1,0 +1,39 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    background-color: rgb(115, 96, 71);
+    margin: auto;
+    width: 50%;
+    border: 8px dashed rgb(12, 6, 6);
+    border-radius: 7px;
+    padding-top: 15px;
+    padding-bottom: 20px; 
+    padding-left: 8px; 
+    padding-right: 8px; 
+}
+
+.form-control {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 60%;
+    color: darkblue;
+}
+
+button[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: beige;
+    background-color: blue;
+}
+
+button[type="submit"]:hover {
+    background-color: crimson;
+}

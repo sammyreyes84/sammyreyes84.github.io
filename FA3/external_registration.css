@@ -3,10 +3,10 @@
 }
 
 .form-container{
-    background-color:burlywood;
+    background-color:rgb(154, 145, 134);
     margin: auto;
     width: 70%;
-    border: 4px dashed rgb(59, 48, 31);
+    border: 8px dashed rgb(6, 5, 4);
     border-radius: 7px;
     padding-top: 15px;
     padding-bottom: 20;
