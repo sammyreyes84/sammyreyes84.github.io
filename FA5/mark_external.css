@@ -1,8 +1,6 @@
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #7a2020;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -32,7 +30,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 50px;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .introduction {
@@ -65,7 +63,7 @@ h2 {
 }
 
 
-.photo-scatter {
+.photo {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -73,15 +71,15 @@ h2 {
     margin-top: 20px;
 }
 
-.photo-scatter img {
+.photo img {
     width: 500px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
 }
 
-.photo-scatter img:hover {
+.photo img:hover {
     transform: scale(1.05);
 }
 
