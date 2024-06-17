@@ -6,14 +6,15 @@
     <link rel="stylesheet" type="text/css" href="registration.css">
     <title>Employee Registration</title>
     <script type="text/javascript">
-        function validateForm() {
+        function validateForm(event) {
+            event.preventDefault();
+
             const lastname = document.getElementById("lastname").value;
             const firstname = document.getElementById("firstname").value;
             const emailaddress = document.getElementById("emailaddress").value;
             const password = document.getElementById("password").value;
-            const contactnumber = document.getElementById("contactnnumber").value;
 
-            if (lastname === "" || firstname === "" || emailaddress === "" || password === "" || contactnumber === "") {
+            if (lastname === "" || firstname === "" || emailaddress === "" || password === "") {
                 alert("All fields marked with * are required.");
                 return false;
             }
@@ -21,7 +22,7 @@
                 alert("Password must be at least 6 characters long.");
                 return false;
             }
-            window.location.href = "login.html";
+            window.location.href = "https://sammyreyes84.github.io/FA6/login.html";
             return true;
         }
     </script>
@@ -29,8 +30,8 @@
 <body>
     <div class="form-container">
         <h1>Employee Registration Form</h1>
-        <div> 
-            <form onsubmit="return validateForm();">
+        <div>
+            <form onsubmit="validateForm(event);">
                 <div class="form-control">
                     <label for="lastname">Last Name*</label><br>
                     <input type="text" id="lastname" name="lastname" placeholder="Last Name">
@@ -75,3 +76,4 @@
     </div>
 </body>
 </html>
+
