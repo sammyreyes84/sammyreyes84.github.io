@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <title>Employee Registration</title>
+    <script type="text/javascript">
+        function validateForm() {
+            const lastname = document.getElementById("lastname").value;
+            const firstname = document.getElementById("firstname").value;
+            const emailaddress = document.getElementById("emailaddress").value;
+            const password = document.getElementById("password").value;
+            const contactnumber = document.getElementById("contactnnumber").value;
+
+            if (lastname === "" || firstname === "" || emailaddress === "" || password === "" || contactnumber === "") {
+                alert("All fields marked with * are required.");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            window.location.href = "login.html";
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Employee Registration Form</h1>
+        <div> 
+            <form onsubmit="return validateForm();">
+                <div class="form-control">
+                    <label for="lastname">Last Name*</label><br>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                </div>
+                <div class="form-control">
+                    <label for="firstname">First Name*</label><br>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                </div>
+                <div class="form-control">
+                    <label for="middlename">Middle Name</label><br>
+                    <input type="text" id="middlename" name="middlename" placeholder="Middle Name">
+                </div>
+                <div class="form-control">
+                    <label for="contactnumber">Contact Number</label><br>
+                    <input type="text" id="contactnumber" name="contactnumber" placeholder="09*********">
+                </div>
+                <div class="form-control">
+                    <label for="birthdate">Birthdate</label><br>
+                    <input type="text" id="birthdate" name="birthdate" placeholder="01/30/2000">
+                </div>
+                <div class="form-control">
+                    <label for="nationality">Nationality</label><br>
+                    <input type="text" id="nationality" name="nationality">
+                </div>
+                <div class="form-control">
+                    <label for="homeaddress">Home Address</label><br>
+                    <input type="text" id="homeaddress" name="homeaddress">
+                </div>
+                <div class="form-control">
+                    <label for="emailaddress">Email Address*</label><br>
+                    <input type="text" id="emailaddress" name="emailaddress" placeholder="juandelacruz@gmail.com">
+                </div>
+                <div class="form-control">
+                    <label for="password">Password*</label><br>
+                    <input type="password" id="password" name="password" placeholder="123abc!">
+                </div>
+                <div class="form-control">
+                    <button type="submit">REGISTER NOW</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
