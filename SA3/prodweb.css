@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#fde6f4
+}
+
+header {
+    background: linear-gradient(to right, #d48cb8, #ebe7e2);
+    color: rgb(241, 173, 215);
+    padding: 40px;
+}
+
+header p {
+    font-size: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #6c0e46;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.slideshow-item {
+    text-align: center;
+}
