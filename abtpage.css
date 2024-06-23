@@ -1,0 +1,93 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://tinyurl.com/3k9cbwf5') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.header {
+    background-color: #22287e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.61);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #13198f;
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.social-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.536);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.social-container h2 {
+    color: #13198f;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links a {
+    color: #22287e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
