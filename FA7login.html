@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FEU Log In Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            background-image: url('https://tinyurl.com/3cxwbd6p');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .login-form {
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            width: 575px;
+            position: relative;
+            color: white;
+        }
+
+        .login-form img {
+            width: 200px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+
+        .form-group {
+            text-align: left;
+        }
+
+        .login-form label, .login-form a {
+            color: white;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form-actions .btn {
+            flex: 1;
+            max-width: 150px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .form-actions .btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .login-content {
+            border-bottom: 1px solid white;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            margin: 5px;
+            color: white;
+        }
+        .microsoft-login {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .microsoft-login a {
+            display: inline-block;
+            background-color: transparent;
+            border: none;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: text-decoration 0.3s ease;
+        }
+
+        .microsoft-login a:hover {
+            text-decoration: underline;
+        }
+        .instructure-logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .instructure-logo img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="login-container">
+            <form class="login-form">
+                <div class="login-content">
+                    <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="https://tinyurl.com/5fr5mra3" alt="FEU Logo">
+                        <h4>Browse Course</h4>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-actions">
+                        <div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="staySignedIn">
+                                <label class="form-check-label" for="staySignedIn">Stay signed in</label>
+                            </div>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                    </div>
+                </div>
+                <div class="microsoft-login">
+                    <a href="#">Log In with Microsoft</a>
+                </div>
+                <div class="footer">
+                    <a href="help.html">Help</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="policy.html">Acceptable Use Policy</a>
+                    <a href="https://www.facebook.com/FarEasternUniversity">Facebook</a>
+                    <a href="https://x.com/FarEasternU">Twitter</a>
+                </div>
+                <div class="instructure-logo">
+                    <img src="https://tinyurl.com/y9933k6r" alt="Instructure Logo">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
